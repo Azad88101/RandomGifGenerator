@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* https://10015.io/tools/css-background-pattern-generator */
+.backGround {
+   background: radial-gradient(circle, transparent 20%, #47d3ff 20%, #47d3ff 80%, transparent 80%, transparent) 0% 0% / 46px 46px, radial-gradient(circle, transparent 20%, #47d3ff 20%, #47d3ff 80%, transparent 80%, transparent) 23px 23px / 46px 46px, linear-gradient(#474bff 2.5px, transparent 2.5px) 0px -1.25px / 23px 23px, linear-gradient(90deg, #474bff 2.5px, #47d3ff 2.5px) -1.25px 0px / 23px 23px #47d3ff;
+   background-size: 46px 46px, 46px 46px, 23px 23px, 23px 23px;
+   background-color: #47d3ff;
+
+}
+
+
+
+.spinner {
+   width: 11.2px;
+   height: 11.2px;
+   border-radius: 11.2px;
+   box-shadow: 28px 0px 0 0 rgba(71,75,255,0.2), 22.7px 16.5px 0 0 rgba(71,75,255,0.4), 8.68px 26.6px 0 0 rgba(71,75,255,0.6), -8.68px 26.6px 0 0 rgba(71,75,255,0.8), -22.7px 16.5px 0 0 #474bff;
+   animation: spinner-b87k6z 1s infinite linear;
+}
+
+@keyframes spinner-b87k6z {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
