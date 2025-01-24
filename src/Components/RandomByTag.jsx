@@ -11,14 +11,14 @@ const RandomByTag = () => {
 
   const fetchData = async () => {
     try {
-      setLoading(true); // Ensure loading is true at the start
+      setLoading(true); 
       const URL = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${TagData}`;
       const { data } = await axios.get(URL);
       const Images = data.data.images.downsized_large.url;
       setGif(Images);
       setTimeout(() => {
         setLoading(false); 
-      }, 1000); // Stop loading after fetching
+      }, 1000);
       console.log(Images);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -42,8 +42,8 @@ const RandomByTag = () => {
   };
 
   return (
-    <div className="w-1/2  bg-green-500 gap-y-5 rounded-xl mt-4 flex flex-col items-center p-4 border border-gray-900 transition-all hover:shadow-xl hover:bg-green-600">
-      <h1 className="text-3xl underline font-semibold mb-5 mt-3 uppercase text-white">
+    <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[50%] bg-green-500 gap-y-5 rounded-xl mt-4 flex flex-col items-center p-4 border border-gray-900 transition-all hover:shadow-xl hover:bg-green-600">
+      <h1 className="text-3xl underline font-semibold mb-5 mt-3 uppercase text-black">
         Random {TagData} Gif
       </h1>
       {Loading ? (
