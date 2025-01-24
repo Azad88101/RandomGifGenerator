@@ -15,7 +15,7 @@ const RandomIGifGenerator = () => {
       const Images = data.data.images.downsized_large.url;
       setGif(Images);
       setLoading(false); 
-      console.log(Images);
+      // console.log(Images);
     } catch (error) {
       console.error("Error fetching data:", error);
       setLoading(false);

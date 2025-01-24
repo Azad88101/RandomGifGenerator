@@ -19,7 +19,7 @@ const RandomByTag = () => {
       setTimeout(() => {
         setLoading(false); 
       }, 1000);
-      console.log(Images);
+      // console.log(Images);
     } catch (error) {
       console.error("Error fetching data:", error);
       setLoading(false);
